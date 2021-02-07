@@ -1,0 +1,22 @@
+[package]
+name = "lamsubs"
+version = "0.1.0"
+authors = ["David Mytton <david@davidmytton.co.uk>"]
+edition = "2018"
+
+[[bin]]
+path = "src/main.rs"
+name = "lamsubs"
+
+[dependencies]
+log = "^0.4.14"
+mailchimp = "^0.1.15"
+rocket = "^0.4.6"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+
+[dependencies.rocket_contrib]
+version = "^0.4.6"
+default-features = false
+features = ["json"]
